@@ -1,0 +1,36 @@
+<body>
+    <div class="container bg-dark text-light">
+        <!-- section search all article -->
+        <div class="row">
+            <div class="d-flex justify-content-center pt-4 pb-4">
+                <form method="post" action="#" target="_blank" class="w-50">
+                    <div class="input-group">
+                        <input type="text" class="form-control box-search-top bg-light border-dark text-danger"
+                            name="qsearch" placeholder="Tìm kiếm">
+                        <div class="input-group-append">
+                            <button class="btn btn-success px-4" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- section: list of new article -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="d-flex justify-content-between">
+                    <h5>Các bài viết mới nhất</h5>
+                    <app-tags></app-tags>
+                </div>                
+                <app-card-content [posts]="postsData">
+                </app-card-content>
+            </div>
+            <div class="col-md-4">
+                <app-sidebar-right></app-sidebar-right>
+            </div>
+
+        </div>
+
+    </div>
+</body>

@@ -1,0 +1,31 @@
+.header-space-top {
+    height: 150px;
+    background-color: rgb(74, 21, 152);
+
+}
+
+.logo-page {
+    color: rgb(244, 250, 79);
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+
+.user-info {
+    margin-right: 20px;
+}
+
+.login-button {
+    width: 120px !important;
+    text-align: center;
+    color: white;
+}
