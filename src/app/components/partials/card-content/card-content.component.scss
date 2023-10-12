@@ -1,0 +1,18 @@
+.card-author{
+    color:  rgb(118, 118, 241);
+}   
+.card-title{
+    color: rgb(211, 245, 16);;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+img{
+    border-radius: 10px !important;
+    object-fit: cover;
+  }

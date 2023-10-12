@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
-import { SidebarRightComponent } from './components/sidebar-right/sidebar-right.component';
-import { CardContentComponent } from './components/card-content/card-content.component';
-import { TagsComponent } from './components/tags/tags.component';
+import { HeaderComponent } from './components/partials/header/header.component';
+import { FooterComponent } from './components/partials/footer/footer.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { SidebarRightComponent } from './components/partials/sidebar-right/sidebar-right.component';
+import { CardContentComponent } from './components/partials/card-content/card-content.component';
+import { TagsComponent } from './components/partials/tags/tags.component';
+import { LoginComponent } from './components/pages/login/login.component';
+import { PostPageComponent } from './components/pages/post-page/post-page.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,13 @@ import { TagsComponent } from './components/tags/tags.component';
     HomeComponent,
     SidebarRightComponent,
     CardContentComponent,
-    TagsComponent
+    TagsComponent,
+    LoginComponent,
+    PostPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
